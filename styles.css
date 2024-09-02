@@ -1,0 +1,170 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #176585;
+    --secondary-color: #27b1bf;
+    --tertiary-color: #36cecc;
+    --background-color: #e8f3f6;
+    --text-color: #333;
+    --white-color: #ffffff;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal da tela de login */
+.login-container {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+}
+
+/* Grupo de entrada de dados */
+.input-group {
+    margin-bottom: 16px;
+}
+
+/* Estilo das labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Estilo dos campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #227575;
+    font-size: 16px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* Estilo do checkbox e label de "Lembrar-me" */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão de login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+/* Efeito de hover no botão de login */
+.login-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Estilo das opções de link */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.options a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da seção de login social */
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Botões de login social */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilo base para os botões sociais */
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Botão social Google */
+.social-btn.google {
+    background-color: var(--primary-color);
+}
+
+.social-btn.google:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Botão social Facebook */
+.social-btn.facebook {
+    background-color: var(--primary-color);
+}
+
+.social-btn.facebook:hover {
+    background-color: var(--tertiary-color);
+}
+
+/* Asterisco nas labels obrigatórias */
+label[for="email"]:after, label[for="password"]:after {
+    content: ' *';
+    color: #000000;
+}
+
+
